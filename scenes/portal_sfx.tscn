@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://cjrhd7mltorj1"]
+
+[ext_resource type="Script" path="res://scripts/portal_sfx.gd" id="1_gq3kt"]
+[ext_resource type="AudioStream" uid="uid://bb0ub3skse1xb" path="res://assets/sounds/portal_zium.wav" id="1_rre3p"]
+
+[node name="PortalSFX" type="Node"]
+script = ExtResource("1_gq3kt")
+
+[node name="EnterPortal" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_rre3p")
+bus = &"SFX"
